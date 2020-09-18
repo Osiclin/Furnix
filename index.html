@@ -5,11 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="css/mobilelayout.css" type="text/css" rel="stylesheet">
-        <script src="script/nav.js"></script>
     </head>
     <body>    
         <header>
-            <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span class="hamburger" style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
             <a href="https://osiclin.github.io/Furnix">
                 <div class="logo">
                 <img class="logo1" src="images/logo1.png" width="38rem">
@@ -27,14 +26,14 @@
                     </ul>
                 </nav>
                 <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <!-- <a href="javascript:void(0)" class="closebtn" >&times;</a> -->
                     <a href="index.html">Home</a>
                     <a href="showroom.html">Showroom</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
         </header>
-        <main>
+        <main onclick="closeNav()">
             <div class="greet">
                 <span id="greeting"></span>
             </div>
@@ -87,5 +86,6 @@
         </footer>
         <script src="js/jquery-3.5.1.js"></script>
         <script src="js/greeting.js"></script>
+        <script src="js/nav.js"></script>
     </body>
 </html> 

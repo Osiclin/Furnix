@@ -186,3 +186,9 @@
   
   }
   
+@media screen and (max-width: 320px){
+  .homebgtext{
+    font-size: 1.4rem;
+    line-height: 3rem; 
+  }
+}
