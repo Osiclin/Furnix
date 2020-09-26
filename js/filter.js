@@ -52,6 +52,6 @@ function filterShelf() {
     }
 }
 
-function filterChair() {
-    document.getElementById('furniture-block').innerHTML = "There are no chairs available.";
-}
+// function filterChair() {
+//     document.getElementById('furniture-block').innerHTML = "There are no chairs available.";
+// }
