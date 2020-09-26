@@ -3,10 +3,13 @@ html{
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
   min-width: 650px;
+  min-height: 100vh;
+  position: relative;
 }
 
 .sidenav {
@@ -27,7 +30,7 @@ body {
   
 .sidenav a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: rgb(255, 94, 0);
   display: block;
   transition: 1s;
@@ -117,13 +120,17 @@ li>a:hover{
   filter: brightness(0.5);
 }
 
+#homebgtext{
+  position: relative;
+}
+
 .homebgtext{
   width: 100%;
   min-width: 650px;
   font-size: 4rem;
   color: white;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 0%;
   right: 18%;
   line-height: 150px;
@@ -246,6 +253,18 @@ h3{
   font-size: 1.2rem;
 }
 
+.scrollmenu a:hover{
+  background-color: rgb(255, 94, 0);
+  border-radius: 5px;
+  color: white;
+}
+
+.scrollmenu a:active{
+  background-color: rgb(255, 94, 0);
+  border-radius: 5px;
+  color: white;
+}
+
 .category{
   display: inline-flex;
   margin-bottom: 20px;
@@ -256,13 +275,15 @@ h3{
 }
 
 footer{
+  width: 100%;
   text-align: center;
-  height: 50px;
+  height: 40px;
   display: flex;
-  margin-top: 30px;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: rgb(255, 94, 0);
+  position: absolute;
+  bottom: -50px;
 }
 
 figcaption{

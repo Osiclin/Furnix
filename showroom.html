@@ -3,7 +3,6 @@
     <head>
         <title>FurNiX - Showroom</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="script/nav.js"></script>
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="css/mobilelayout.css" type="text/css" rel="stylesheet">
     </head>
@@ -37,41 +36,41 @@
         <div class="category">    
                 <span class="categories">Categories</span>
                 <div class="scrollmenu">
-                <a class="cat" href="#">All</a>
-                <a class="cat" href="#">Chair</a>
-                <a class="cat" href="#">Couch</a>
-                <a class="cat" href="#">Dinning</a>
-                <a class="cat" href="#">Shelf</a>
-                <a href="#">Wardrobe</a>
+                <a class="cat" href="#" onclick="showAll()">All</a>
+                <a class="cat" href="#" onclick="filterChair()">Chair</a>
+                <a class="cat" href="#" onclick="filterCouch()">Couch</a>
+                <a class="cat" href="#" onclick="filterDinning()">Dinning</a>
+                <a class="cat" href="#" onclick="filterShelf()">Shelf</a>
+                <a href="#" onclick="filterWardrobe()">Wardrobe</a>
             </div>
         </div>
         <figure>
-            <div class="x">
-                <div class="img1">
+            <div id="furniture-block" class="x">
+                <div class="img1  couch all">
                     <img src="images/couch/couch10.jpg" class="mimg" width="50%">
                     <figcaption>Dark-Brown Leather Button Couch</figcaption>    
                 </div>
-                <div class="img1">
+                <div class="img1 couch all">
                     <img src="images/couch/couch7.jpg" class="mimg" width="50%">
                     <figcaption>Lorem ipsum - Details Here</figcaption>
                 </div>
-                <div class="img1">
+                <div class="img1 dinning all">
                     <img src="images/dinning/dinning2.jpg" class="mimg" width="50%">
                     <figcaption>Wooden Dinning</figcaption>
                 </div>
-                <div class="img1">
+                <div class="img1 dinning all">
                     <img src="images/dinning/dinning4.jpg" class="mimg" width="50%">
                     <figcaption>Lorem ipsum</figcaption>
                 </div>
-                <div class="img1">
+                <div class="img1 shelf all">
                     <img src="images/shelf/shelf3.jpg" class="mimg" width="50%">
                     <figcaption>Lorem ipsum - Details Here</figcaption>
                 </div>
-                <div class="img1">
+                <div class="img1 wardrobe all">
                     <img src="images/wardrobe/wd2.jpg" class="mimg" width="50%">
                     <figcaption>Lorem ipsum - Details Here</figcaption>
                 </div>
-                <div class="img1">
+                <div class="img1 wardrobe all">
                     <img src="images/wardrobe/wd4.jpg" class="mimg" width="50%">
                     <figcaption>Lorem ipsum - Details Here</figcaption>
                 </div>
@@ -83,5 +82,6 @@
     </footer>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 </html>
