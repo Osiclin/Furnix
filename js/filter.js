@@ -2,12 +2,16 @@ const couch = document.getElementsByClassName('couch');
 const dinning = document.getElementsByClassName('dinning');
 const wardrobe = document.getElementsByClassName('wardrobe');
 const shelf = document.getElementsByClassName('shelf');
-
+const cat = document.getElementsByClassName('cat');
 
 var category = [couch, dinning, wardrobe, shelf]
 
 
 function showAll() {
+    for (i = 0; i < cat.length; i++) {
+        cat[i].classList.remove('active');
+    }
+    cat[0].classList.add('active')
     for (i = 0, j = 0, k = 0; i <= category.length;) {
         category[j][k].style.display = 'block';
         category[j][k + 1].style.display = 'block';
@@ -16,7 +20,11 @@ function showAll() {
     }  
 }
 
-function filterCouch() {  
+function filterCouch() { 
+    for (i = 0; i < cat.length; i++) {
+        cat[i].classList.remove('active');
+    }
+    cat[1].classList.add('active')
     for (i = 0, j = 0, k = 0; i < 2; i++) {
         category[0][i].style.display = 'block';
         category[1][i].style.display = 'none';
@@ -26,6 +34,10 @@ function filterCouch() {
 }
 
 function filterDinning() {
+    for (i = 0; i < cat.length; i++) {
+        cat[i].classList.remove('active');
+    }
+    cat[2].classList.add('active')
     for (i = 0; i < 2; i++) {
         category[0][i].style.display = 'none';
         category[1][i].style.display = 'block';
@@ -35,6 +47,10 @@ function filterDinning() {
 }
 
 function filterWardrobe() {
+    for (i = 0; i < cat.length; i++) {
+        cat[i].classList.remove('active');
+    }
+    cat[4].classList.add('active')
     for (i = 0; i < 2; i++) {
         category[0][i].style.display = 'none';
         category[1][i].style.display = 'none';
@@ -43,7 +59,11 @@ function filterWardrobe() {
     }
 }
 
-function filterShelf() { 
+function filterShelf() {
+    for (i = 0; i < cat.length; i++) {
+        cat[i].classList.remove('active');
+    }
+    cat[3].classList.add('active')
     for (i = 0; i < 2; i++) {
         category[0][i].style.display = 'none';
         category[1][i].style.display = 'none';
