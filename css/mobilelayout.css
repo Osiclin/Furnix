@@ -1,4 +1,8 @@
 @media screen and (max-width: 500px){
+    *{
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -73,51 +77,36 @@
   
     .wcublock{
       display: grid;
-      margin: 5px 30px 5px 15px;
+      margin: 0 auto;
       justify-content: initial;
     }
   
     .q{
       width: 100%;
-      box-shadow: 5px 5px rgb(255, 94, 0);
+      box-shadow: -1px 2px 4px 2px rgb(255, 94, 0);
       margin-right: 1%;
       margin-bottom: 5%;
       border-radius: 10px;
-      padding: 0% 1% 1% 1%;
+      padding: 0px 5px 0px 5px;
+      text-align: center;
     }
-  
-    .ap{
-      width: 100%;
-      box-shadow: 5px 5px rgb(255, 94, 0);
-      margin-right: 1%;
-      margin-bottom: 5%;
-      border-radius: 10px;
-      padding: 0% 1% 1% 1%;
-    }
-    
-    .d{
-      width: 100%;
-      box-shadow: 5px 5px rgb(255, 94, 0);
-      border-radius: 10px;
-      margin-bottom: 10%;
-      padding: 0% 1% 1% 1%;
-    }
-    
-  
+
     .a{
       width: 100%;
       margin-right: 1%;
       margin-bottom: 5%;
-      box-shadow: 5px 5px rgb(255, 94, 0);
+      box-shadow: -1px 2px 4px 2px rgb(255, 94, 0);
       border-radius: 10px;
-      padding: 0% 1% 1% 1%;
+      padding: 0px 5px 10px 5px;
+      text-align: center;
     }
     
     .e{
       width: 100%;
-      box-shadow: 5px 5px rgb(255, 94, 0);
+      box-shadow: -1px 2px 4px 2px rgb(255, 94, 0);
       border-radius: 10px;
-      padding: 0% 1% 1% 1%;
+      padding: 0px 5px 0px 5px;
+      text-align: center;
     }
   
     h3{
